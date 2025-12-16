@@ -1,34 +1,34 @@
 <script>
-  import { break_pre_values } from "./mainLogic";
+  import { pre_break_values } from "./mainLogic";
 </script>
 
 <div class="producers-container">
   <div class="pdr" style="border-color: coral;">
     <p style="font-size: 20px; margin-top: 0;">생산기 1</p>
-    <p class="pdr_data" title="{break_pre_values.pdr1.amount_cl}개 구매함">개수 : {break_pre_values.pdr1.amount}</p>
-    <p class="pdr_data">배율 : {break_pre_values.pdr1.mult}</p>
-    <button id="buy_pdr1">가격 : {break_pre_values.pdr1.price}</button>
+    <p class="pdr_data" title="{pre_break_values.pdrs[0].purchase_count}개 구매함">개수 : {pre_break_values.pdrs[0].amount}</p>
+    <p class="pdr_data">배율 : {pre_break_values.pdrs[0].mult}</p>
+    <button id="buy_pdr1" onclick={() => buyPdr(0)}>가격 : {pre_break_values.pdrs[0].price}</button>
   </div>
 
   <div class="pdr" style="border-color: yellow;">
     <p style="font-size: 20px; margin-top: 0;">생산기 2</p>
-    <p class="pdr_data" title="{break_pre_values.pdr2.amount_cl}개 구매함">개수 : {break_pre_values.pdr2.amount}</p>
-    <p class="pdr_data">배율 : {break_pre_values.pdr2.mult}</p>
-    <button id="buy_pdr2">가격 : {break_pre_values.pdr2.price}</button>
+    <p class="pdr_data" title="{pre_break_values.pdrs[1].purchase_count}개 구매함">개수 : {pre_break_values.pdrs[1].amount}</p>
+    <p class="pdr_data">배율 : {pre_break_values.pdrs[1].mult}</p>
+    <button id="buy_pdr2">가격 : {pre_break_values.pdrs[1].price}</button>
   </div>
 
   <div class="pdr" style="border-color: lime;">
     <p style="font-size: 20px; margin-top: 0;">생산기 3</p>
-    <p class="pdr_data" title="{break_pre_values.pdr3.amount_cl}개 구매함">개수 : {break_pre_values.pdr3.amount}</p>
-    <p class="pdr_data">배율 : {break_pre_values.pdr3.mult}</p>
-    <button id="buy_pdr3">가격 : {break_pre_values.pdr3.price}</button>
+    <p class="pdr_data" title="{pre_break_values.pdrs[2].purchase_count}개 구매함">개수 : {pre_break_values.pdrs[2].amount}</p>
+    <p class="pdr_data">배율 : {pre_break_values.pdrs[2].mult}</p>
+    <button id="buy_pdr3">가격 : {pre_break_values.pdrs[2].price}</button>
   </div>
 
   <div class="pdr" style="border-color: aqua;">
     <p style="font-size: 20px; margin-top: 0;">생산기 4</p>
-    <p class="pdr_data" title="{break_pre_values.pdr4.amount_cl}개 구매함">개수 : {break_pre_values.pdr4.amount}</p>
-    <p class="pdr_data">배율 : {break_pre_values.pdr4.mult}</p>
-    <button id="buy_pdr4">가격 : {break_pre_values.pdr4.price}</button>
+    <p class="pdr_data" title="{pre_break_values.pdrs[3].purchase_count}개 구매함">개수 : {pre_break_values.pdrs[3].amount}</p>
+    <p class="pdr_data">배율 : {pre_break_values.pdrs[3].mult}</p>
+    <button id="buy_pdr4">가격 : {pre_break_values.pdrs[3].price}</button>
   </div>
 </div>
 
