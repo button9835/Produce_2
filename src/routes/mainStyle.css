@@ -1,0 +1,17 @@
+:root {
+  background-color: #666666;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mainResource {
+  border-bottom: solid 2px white;
+  border-top: solid 2px white;
+  font-size: xx-large;
+  margin-top: 8px;
+  padding: 5px;
+  font-weight: 400;
+}
