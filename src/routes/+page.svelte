@@ -1,14 +1,8 @@
 <script>
-  import { onMount, onDestroy } from 'svelte';
-  import { pre_break_values, initializeMainLogic, cleanupMainLogic } from "./mainLogic";
-	import Producers from './producers.svelte';
-
-  onMount(initializeMainLogic);
-
-  onDestroy(cleanupMainLogic);
+  import { game, display } from '$lib/game.js';
+  import Producers from './producers.svelte';
 </script>
 
-
-<p class="mainResource"> 자원 : {pre_break_values.resource}</p>
+<p class="mainResource"> 자원 : {display($game.resource)}</p>
 
 <Producers />
